@@ -1,0 +1,1 @@
+window.location('https://olliegamer59.github.io/home')

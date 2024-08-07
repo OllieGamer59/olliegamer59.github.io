@@ -6,7 +6,9 @@
     height: auto;
 }
 h1 {
-    font-family: 'Work Sans', sans-serif;
+    color: white;
+    font-family: Arial;
+    text-align: center;
 }
 
 body {

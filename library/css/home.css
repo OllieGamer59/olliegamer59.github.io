@@ -1,10 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
+
 #header {
     background-image: url(https://olliegamer59.github.io/library/images/banner.jpg);
     height: auto;
-    padding: 100px 100px
+    width: auto;
 }
-h1#headertext {
+h1 {
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    background-color: rgb(43, 37, 37);
     color: white;
-    font-family: Arial;
-    text-align: center;
 }

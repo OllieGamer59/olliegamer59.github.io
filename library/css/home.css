@@ -11,3 +11,8 @@ h1 {
     font-family: Arial;
     text-align: center;
 }
+
+body {
+    color: white;
+    background-color: rgb(43, 38, 38);
+}

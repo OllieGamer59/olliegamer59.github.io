@@ -12,6 +12,10 @@ h1 {
     text-align: center;
 }
 
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
     color: white;
     background-color: rgb(43, 38, 38);

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
 
-#header {
+.header {
     background-image: url(https://olliegamer59.github.io/library/images/banner.jpg);
     height: auto;
     padding: 100px 100px
@@ -18,7 +18,22 @@ p {
     font-weight: 300;
 }
 
+h3.commit {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
 body {
     color: white;
     background-color: rgb(43, 38, 38);
+    background-repeat: no-repeat;
+}
+
+div.commit {
+    outline: 2px solid #222427ce;
+    width: max-content;
+    height: max-content;
+    border-radius: 1%;
+    background-color: #222427ce;
+    height: 250px;
 }

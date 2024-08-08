@@ -4,13 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://olliegamer59.github.io/library/css/home.css"/>
+    <script>
+        fetch('https://api.github.com/repos/OllieGamer59/olliegamer59.github.io/commits?per_page=1')
+  .then(res => res.json())
+  .then(res => {
+let inputString = res[0].commit.message;
+let parts = inputString.split('\n\n');
+    document.getElementById('message').innerHTML = parts[0]
+    document.getElementById('desc').innerHTML = parts[1]
+  })
+  fetch('https://api.github.com/repos/OllieGamer59/olliegamer59.github.io/commits?per_page=1')
+  .then(res => res.json())
+  .then(res => {
+    var output = "Commit By: " + res[0].commit.author.name
+    document.getElementById('author').innerHTML = output
+  })
+    </script>
+    <style>
+        div.footer {
+    height:250px;
+    margin-right:10px;
+    position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(26, 26, 26);
+        }
+        div.commit {
+            float:left;
+            margin-right:5px;
+        }
+        div.contact {
+            float: right;
+            margin-left:5px;
+            text-align: right;
+        }
+    </style>
     <title>Home | OllieTheGamer</title>
 </head>
 <body>
-    <div id="header">
+    <div class="header">
         <h1>OllieTheGamer</h1>
     </div>
     <br>
     <p>Hi! I Am Currently A Small YouTuber Who Plays Many Roblox Games. I Am Hoping To Become A Larger YouTuber One Day. But That Can Only Be Achieved If YOU Support Me! I Take Game Suggestions Seriously. (Post Your Suggestions On The <a href="https://www.youtube.com/@YT.OllieTheGamer/community">Community Page</a>)</p>
+    <br>
+    <div class="footer">
+        <div class="commit">
+            <p>Latest Commit On <a href="https://github.com/OllieGamer59/olliegamer59.github.io">GitHub</a></p>
+            <br>
+            <h3 id="message" class="commit">Loading...</h3>
+            <h3 id="desc" class="commit">Loading...</h3>
+            <h3 id="author" class="commit">Loading...</h3>
+        </div>
+        <div class="contact">
+            <p>Contact & Info</p>
+            <p>This Website Was Made With The</p>
+            <p>Help Of <a href="https://linktr.ee/StuffzEZ">StuffzEZ</a></p>
+            <p>View My Channel <a href="https://youtube.com/@YT.OllieTheGamer">Here</a></p>
+            <p>Hope You Enjoyed! :)</p>
+        </div>
 </body>
 </html>
